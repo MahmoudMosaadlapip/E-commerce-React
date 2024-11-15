@@ -1,0 +1,134 @@
+.navi{
+    width: 100%;
+    height: 50px;
+    background: black !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navContainer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.navLogo{
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 900;
+    color: #c95800;
+}
+
+.navLinks{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.navLinks a
+{
+    color: #c95800;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before
+{
+    height: 100%;
+}
+
+.navToggler{
+    display: none;
+}
+
+.cart{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cart span{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 13px;
+    right: 12px;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart svg{
+    color: #c95800;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 700px) {
+
+    .navToggler{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.navToggler svg{
+    color: #c95800;
+
+}
+
+.navLinks{
+    width: 300px;
+    height: 95vh;
+    background: black;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks a{
+    gap: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+}
